@@ -1,4 +1,4 @@
-package com.shenouda.gymsaround.ui.theme
+package com.shenouda.core_ui.theme
 
 import android.app.Activity
 import android.os.Build
