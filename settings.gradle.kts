@@ -21,4 +21,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "GymsAround"
 include(":app")
- 
+include(":core-network")
+include(":core-common")
+include(":domain")
+include(":data")
+include(":core-ui")
