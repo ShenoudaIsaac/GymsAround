@@ -5,9 +5,7 @@ plugins {
 
 android {
     namespace = "com.shenouda.domain"
-    compileSdk {
-        version = release(35)
-    }
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 24
