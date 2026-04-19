@@ -5,9 +5,8 @@ plugins {
 
 android {
     namespace = "com.shenouda.core_network"
-    compileSdk {
-        version = release(35)
-    }
+    compileSdk = 36
+
 
     defaultConfig {
         minSdk = 24
