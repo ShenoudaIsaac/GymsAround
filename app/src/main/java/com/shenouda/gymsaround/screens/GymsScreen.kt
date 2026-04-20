@@ -17,6 +17,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -41,7 +42,7 @@ import java.util.Vector
 fun GymsScreen (
 ) {
     val gymViewModel: GymViewModel=viewModel()
-    var gymListState =gymViewModel.gymListState
+    val gymListState by gymViewModel.gyms.collectAsState()
     LazyColumn() {
         items(gymListState){gym->
             GymItem(gym) { gymViewModel.toggleFavoriteState(it) }
